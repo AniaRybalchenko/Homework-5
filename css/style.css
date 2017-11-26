@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: url(img/sea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+ul {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 26px;
+  padding: 5px;
+  margin: 60px auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li>a:hover, .menu_about>a:hover {
+   color: #3385ff;
+}
+
+.circle {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background: #fff;
+  border-radius: 130px;
+}
+
+.journey {
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Dorsa', sans-serif;
+}
+
+
+.menu_about:hover > .submenu {
+  display: inline-block;
+  vertical-align: middle;
+  background: #000;
+  width: 100px;
+  height: 100px;
+}
+
+
+
+.menu_about {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+
+}
+
+
+.wrapper {
+  display: block;
+  position: relative;
+  width: 800px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 8px;
+  margin: 60px auto;
+}
+
+.img {
+  position: relative;
+  background-image: url(img/thailand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin: 50px;
+  height: 400px;
+  width: 700px;
+}
+
+.top_text {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  background: #fff;
+  margin: 150px auto;
+}
+
+.text-t {
+  font-size: 16px;
+  color: #5DADE2;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+
+.bottom_text {
+  position: absolute;
+  width: 200px;
+  height: 45px;
+  background: #5DADE2;
+  margin: 190px auto;
+}
+
+.text-b {
+  padding-bottom: 30px;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.bottomarrows {
+  position: absolute;
+  text-align: center;
+  line-height: 65px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  bottom: 20px;
+  left: 20px;
+  background: #5DADE2;
+}
+
+.bottomarrows:before {
+  content: '\2190  \2192';
+  color: white;
+}
+
+.destinations {
+  margin-left: 50px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
+.italy, .usa, .france {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 235px;
+  width: 224px;
+}
+
+.italy {
+  background-image: url(img/italy.jpg);
+  margin: 0 10px 100px 50px;
+}
+
+.usa {
+  background-image: url(img/usa.jpg);
+  margin: 0 10px 100px 0;
+}
+
+.france {
+  background-image: url(img/france.jpg);
+  margin: 0 50px 100px 0;
+}
+
+.slider {
+  display: none;
+  position: absolute;
+  height: 235px;
+  width: 132px;
+  background: rgb(50, 77, 105);
+}
+
+.country {
+  font-size: 26px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #fff;
+  text-align: center;
+
+}
+
+.description {
+  font-size: 14px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.italy:hover > .slider,
+.usa:hover > .slider,
+.france:hover > .slider {
+  display: inline-block;
+  width: 132px;
+  height: 235px;
+  background: rgb(50, 77, 105);
+}
+
+button {
+  position: absolute;
+  left: 70px;
+  bottom: 20px;
+  height: 20px;
+  width: 50px;
+  border-radius: 2%;
+}
+
+.to-top::after {
+  content: "\25e0";
+  text-align: center;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #5DADE2;
+  bottom: 100px;
+  left: 1038px;
+}
