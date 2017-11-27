@@ -7,7 +7,7 @@ body {
   background-position: top center;
 }
 
-ul {
+.menu > ul {
   width: 800px;
   display: flex;
   align-items: center;
@@ -19,13 +19,25 @@ ul {
   margin: 60px auto;
 }
 
-a {
+.submenu > ul {
+  list-style: none;
+}
+
+.wc {
   text-decoration: none;
   color: #fff;
 }
 
+.bc {
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  right: 20px;
+}
+
 li>a:hover, .menu_about>a:hover {
-   color: #3385ff;
+  color: #3385ff;
 }
 
 .circle {
@@ -46,27 +58,40 @@ li>a:hover, .menu_about>a:hover {
   font-family: 'Dorsa', sans-serif;
 }
 
-
 .menu_about:hover > .submenu {
   display: inline-block;
-  vertical-align: middle;
-  background: #000;
-  width: 100px;
-  height: 100px;
+  margin-top: 20px;
+  border-radius: 5%;
+  left: 380px;
+  background: #fff;
+  width: 75px;
+  height: 90px;
 }
 
+.menu_about:hover > .triangle-top {
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  left: 405px;
+  margin-bottom: 3px;
+  border-style: solid;
+  border-width: 0 10px 15px 10px;
+  border-color: transparent transparent #fff transparent;
+}
 
+.triangle-top {
+  display: none;
+  position: absolute;
+}
 
-.menu_about {
+.menu {
   position: relative;
 }
 
 .submenu {
   display: none;
   position: absolute;
-
 }
-
 
 .wrapper {
   display: block;
@@ -140,7 +165,7 @@ li>a:hover, .menu_about>a:hover {
 .destinations {
   margin-left: 50px;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   color: #000;
   text-decoration: none;
 }
@@ -182,7 +207,6 @@ li>a:hover, .menu_about>a:hover {
   font-family: 'Pathway Gothic One', sans-serif;
   color: #fff;
   text-align: center;
-
 }
 
 .description {
@@ -204,6 +228,7 @@ li>a:hover, .menu_about>a:hover {
 
 button {
   position: absolute;
+  padding-left: 2px;
   left: 70px;
   bottom: 20px;
   height: 20px;
